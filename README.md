@@ -1,6 +1,6 @@
 
 
-## ms-graph-api, ## reactjs, ## Custom Extension SPfx
+## ms-graph-api, reactjs, Custom Extension SPfx
 
 This is where you include your WebPart documentation.
 
