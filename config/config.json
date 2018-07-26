@@ -1,0 +1,46 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "graph-api-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/graphApi/GraphApiWebPart.js",
+          "manifest": "./src/webparts/graphApi/GraphApiWebPart.manifest.json"
+        }
+      ]
+    },
+    "react-graphdata-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactGraphdata/ReactGraphdataWebPart.js",
+          "manifest": "./src/webparts/reactGraphdata/ReactGraphdataWebPart.manifest.json"
+        }
+      ]
+    },
+    "header-view-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/headerView/HeaderViewApplicationCustomizer.js",
+          "manifest": "./src/extensions/headerView/HeaderViewApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "topnav-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/topnav/TopnavApplicationCustomizer.js",
+          "manifest": "./src/extensions/topnav/TopnavApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GraphApiWebPartStrings": "lib/webparts/graphApi/loc/{locale}.js",
+    "ReactGraphdataWebPartStrings": "lib/webparts/reactGraphdata/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "HeaderViewApplicationCustomizerStrings": "lib/extensions/headerView/loc/{locale}.js",
+    "TopnavApplicationCustomizerStrings": "lib/extensions/topnav/loc/{locale}.js"
+  }
+}
